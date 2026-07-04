@@ -444,6 +444,47 @@ function initSocialLinks() {
         document.getElementById(id).href = githubHref;
     });
 }
+function initImageLightbox() {
+    const lightbox = document.createElement("div");
+    lightbox.className = "image-lightbox";
+    lightbox.innerHTML = `
+        <span class="image-lightbox-close">&times;</span>
+        <img src="" alt="Dashboard preview">
+    `;
+
+    document.body.appendChild(lightbox);
+
+    const lightboxImage = lightbox.querySelector("img");
+    const closeButton = lightbox.querySelector(".image-lightbox-close");
+
+    document.addEventListener("click", (e) => {
+        const image = e.target.closest(".project-card img, .gallery-card img, .dashboard-gallery img, .gallery-grid img");
+
+        if (!image) return;
+
+        lightboxImage.src = image.src;
+        lightbox.classList.add("active");
+    });
+
+    closeButton.addEventListener("click", () => {
+        lightbox.classList.remove("active");
+        lightboxImage.src = "";
+    });
+
+    lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) {
+            lightbox.classList.remove("active");
+            lightboxImage.src = "";
+        }
+    });
+
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+            lightbox.classList.remove("active");
+            lightboxImage.src = "";
+        }
+    });
+}
 
 /* ---------------------------------------------------------
    4. INIT
@@ -467,6 +508,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initContactForm();
   initDownloadCV();
   initSocialLinks();
-
+   initImageLightbox();
   observeReveals();
 });
