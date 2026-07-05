@@ -70,35 +70,62 @@ const galleryData = [
 
 const skillsData = [
   {
-    group: "Business Intelligence",
     icon: "BI",
-    items: ["Power BI", "Metabase", "Dashboard Development", "Data Storytelling", "KPI Reporting"],
+    title: "Business Intelligence",
+    skills: [
+      "Power BI",
+      "Metabase",
+      "Dashboard Development",
+      "Executive Dashboards",
+      "Business Reporting",
+      "Data Storytelling",
+      "KPI Reporting"
+    ]
   },
   {
-    group: "Programming",
     icon: "{ }",
-    items: ["Python", "SQL"],
+    title: "Programming",
+    skills: ["Python", "SQL", "T-SQL"]
   },
   {
-    group: "Python Libraries",
     icon: "py",
-    items: ["Pandas", "NumPy"],
+    title: "Python Libraries",
+    skills: ["Pandas", "NumPy", "Matplotlib"]
   },
   {
-    group: "Power BI",
     icon: "fx",
-    items: ["DAX", "Power Query", "Data Modeling"],
+    title: "Power BI",
+    skills: ["DAX", "Power Query", "Data Modeling", "Star Schema", "Measures"]
   },
   {
-    group: "Analytics",
-    icon: "∑",
-    items: ["Data Cleaning", "Data Transformation", "ETL", "EDA", "Trend Analysis", "Data Visualization", "Business Analysis", "Requirement Gathering"],
+    icon: "Σ",
+    title: "Analytics",
+    skills: [
+      "Data Cleaning",
+      "Data Transformation",
+      "ETL",
+      "EDA",
+      "Trend Analysis",
+      "KPI Analysis",
+      "Root Cause Analysis",
+      "Data Visualization",
+      "Business Analysis",
+      "Requirement Gathering"
+    ]
   },
   {
-    group: "Soft Skills",
     icon: "+",
-    items: ["Leadership", "Communication", "Problem Solving", "Analytical Thinking", "Design Thinking", "Attention to Detail", "Time Management"],
-  },
+    title: "Soft Skills",
+    skills: [
+      "Communication",
+      "Problem Solving",
+      "Analytical Thinking",
+      "Attention to Detail",
+      "Time Management",
+      "Self-Learning",
+      "Stakeholder Management"
+    ]
+  }
 ];
 
 const certData = [
