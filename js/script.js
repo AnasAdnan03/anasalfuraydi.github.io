@@ -143,16 +143,17 @@ const heroTypedWords = ["dashboards.", "decisions.", "data stories.", "business 
 
 function renderSkills() {
   const grid = document.getElementById("skillsGrid");
+
   grid.innerHTML = skillsData
     .map(
       (s, i) => `
     <div class="card skill-card reveal" style="transition-delay:${i * 60}ms">
       <div class="skill-card-head">
         <span class="skill-icon">${s.icon}</span>
-        <h3>${s.group}</h3>
+        <h3>${s.title || s.group}</h3>
       </div>
       <div class="skill-tags">
-        ${s.items.map((item) => `<span>${item}</span>`).join("")}
+        ${(s.skills || s.items).map((item) => `<span>${item}</span>`).join("")}
       </div>
     </div>`
     )
