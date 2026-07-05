@@ -114,24 +114,6 @@ const heroTypedWords = ["dashboards.", "decisions.", "data stories.", "business 
    2. RENDER FUNCTIONS
    --------------------------------------------------------- */
 
-function renderSkills() {
-  const grid = document.getElementById("skillsGrid");
-  grid.innerHTML = skillsData
-    .map(
-      (s, i) => `
-    <div class="card skill-card reveal" style="transition-delay:${i * 60}ms">
-      <div class="skill-card-head">
-        <span class="skill-icon">${s.icon}</span>
-        <h3>${s.group}</h3>
-      </div>
-      <div class="skill-tags">
-        ${s.items.map((item) => `<span>${item}</span>`).join("")}
-      </div>
-    </div>`
-    )
-    .join("");
-}
-
 function renderProjects(filter = "All", query = "") {
   const grid = document.getElementById("projectsGrid");
   const empty = document.getElementById("projectsEmpty");
@@ -165,7 +147,6 @@ function renderProjects(filter = "All", query = "") {
         </div>
         <div class="project-links">
           ${p.links.github ? `<a href="${p.links.github}" target="_blank" rel="noopener">GitHub</a>` : ""}
-          ${p.links.demo ? `<a href="${p.links.demo}" target="_blank" rel="noopener">Live demo</a>` : ""}
           ${p.links.powerbi ? `<a href="${p.links.powerbi}" target="_blank" rel="noopener" class="primary-link">Power BI</a>` : ""}
         </div>
       </div>
