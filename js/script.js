@@ -36,17 +36,21 @@ const projectsData = [
     category: "Power BI",
     links: { github: "#", demo: null, powerbi: "#" },
   },
-  {
-    title: "Interactive Map of Madinah",
-    description:
-      "Graduation project: a relational SQL database designed for an interactive GIS mapping application, including data modeling, normalization, and query optimization to support analytical workflows.",
-    businessValue:
-      "Provides a normalized, query-optimized foundation that lets a mapping app fetch location data quickly without redundant storage.",
-    image: "assets/images/project-madinah-map.svg",
-    tech: ["SQL", "Database Design", "Data Modeling"],
-    category: "SQL",
-    links: { github: "#", demo: null, powerbi: null },
+{
+  title: "Discover Madinah — Interactive GIS & Database Project",
+  description:
+    "A web-based interactive GIS map for exploring attractions in Madinah, supported by a structured relational database, location data, search filters, place details, reviews, and chatbot assistance.",
+  businessValue:
+    "Helps users discover religious, cultural, entertainment, and restaurant locations through organized geographic data, filtering, and accessible place information.",
+  image: "assets/images/madinah-map.png",
+  tech: ["SQL", "Database Design", "GIS", "JavaScript", "Supabase"],
+  category: "SQL",
+  links: {
+    github: "#",
+    demo: "https://discover-madina-2-production.up.railway.app/index.html",
+    powerbi: null
   },
+},,
 ];
 
 const galleryData = [
