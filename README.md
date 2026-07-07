@@ -49,7 +49,7 @@ A Power BI dashboard focused on sales performance, KPI cards, interactive slicer
 
 This project highlights dashboard layout, KPI reporting, sales analysis, and data visualization practices.
 
-## Tech Stack
+## Core Data Analytics Stack
 
 - Power BI
 - DAX
@@ -60,10 +60,17 @@ This project highlights dashboard layout, KPI reporting, sales analysis, and dat
 - NumPy
 - Excel
 - Data Modeling
-- HTML
-- CSS
-- JavaScript
+- Data Cleaning
+- Data Visualization
+- KPI Reporting
+- Business Intelligence
+
+## Supporting Tools
+
+- GitHub
 - GitHub Pages
+- Metabase
+- Supabase
 
 ## Website Features
 
