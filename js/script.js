@@ -474,7 +474,7 @@ function initContactForm() {
 function initDownloadCV() {
     const cvButton = document.getElementById("downloadCV");
 
-    cvButton.href = "assets/Anas_Adnan_Data_Analyst_CV.pdf";
+    cvButton.href = "assets/Anas_Adnan_Data_Analyst.pdf";
     cvButton.target = "_blank";
     cvButton.rel = "noopener noreferrer";
 }
